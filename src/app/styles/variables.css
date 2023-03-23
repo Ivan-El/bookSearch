@@ -1,0 +1,26 @@
+:root {
+  /* font */
+  --font-family-main: 'Montserrat', sans-serif;
+  --font-size-main: 12px;
+  --line-height-main: 16px;
+  --font-size-title-main: 18px;
+  --line-height-title-main: 22px;
+  --font-size-l: 16px;
+  --line-height-l: 20px;
+  --font-size-title-l: 22px;
+  --line-height-title-l: 26px;
+  --font-color-main: #101052;
+  --font-color-secondary: #2f2fcc;
+  --font-color-error: #d80a0a;
+
+  /* colors */
+  --bg-color-secondary: #ffffffe6;
+
+  /* skeleton */
+  --skeleton-color: #fff;
+  --skeleton-shadow: rgba(0 0 0 / 20%);
+
+  /* other */
+  --navbar-height: 300px;
+  --transition: all 0.3s ease-in;
+}

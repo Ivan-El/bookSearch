@@ -1,0 +1,28 @@
+.page {
+  padding: 20px 0;
+  min-height: calc(100vh - var(--navbar-height));
+  background-color: var(--font-color-main);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 93%;
+  min-height: 200px;
+  background-color: var(--bg-color-secondary);
+  border-radius: 20px;
+}
+
+.btnWrapper {
+  margin: 0 auto 20px;
+  width: 93%;
+}
+
+@media (min-width: 768px) {
+  .container,
+  .btnWrapper {
+    width: 80%;
+  }
+}

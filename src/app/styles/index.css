@@ -1,0 +1,48 @@
+@import './reset.css';
+@import './variables.css';
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+  font-size: var(--font-size-main);
+  line-height: var(--line-height-main);
+  font-family: var(--font-family-main);
+  font-weight: normal;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+button {
+  transition: var(--transition);
+}
+
+a:hover,
+button:hover {
+  opacity: 0.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}

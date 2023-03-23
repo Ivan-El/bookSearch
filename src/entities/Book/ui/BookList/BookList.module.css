@@ -1,0 +1,25 @@
+.list {
+  display: grid;
+  grid-template-columns: min-content;
+  row-gap: 20px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .list {
+    grid-template-columns: min-content min-content;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .list {
+    grid-template-columns: min-content min-content min-content;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list {
+    grid-template-columns: min-content min-content min-content min-content;
+  }
+}

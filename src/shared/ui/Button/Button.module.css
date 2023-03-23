@@ -1,0 +1,31 @@
+.Button {
+  cursor: pointer;
+}
+
+.search {
+  min-width: 30px;
+  height: 100%;
+  background-image: url('../../assets/icons/icon_search.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
+
+.more {
+  padding: 5px 10px;
+  border: 2px solid var(--font-color-main);
+  border-radius: 4px;
+}
+
+.back {
+  min-width: 30px;
+  height: 30px;
+  padding: 10px 20px 10px 40px;
+  font-size: var(--font-size-l);
+  line-height: 0;
+  background-image: url('../../assets/icons/icon_back_arrow.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 2px center;
+  border-radius: 8px;
+}

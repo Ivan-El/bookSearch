@@ -1,0 +1,25 @@
+.categories {
+  font-weight: 700;
+  color: #e68c16;
+}
+
+.categoriesBlank {
+  min-height: var(--line-height-main);
+}
+
+.ttl {
+  max-height: 110px;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.img {
+  width: 128px;
+  height: 191px;
+  object-fit: cover;
+  background-color: #fff;
+}
+
+.btn {
+  margin-top: auto;
+}
