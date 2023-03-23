@@ -11,7 +11,7 @@ import {
   getSearchFormText,
   getSearchFormFilter,
 } from '../../model/selectors/searchFormSelectors';
-import { bookSearchFormActions } from '../../model/slices/searchFormSlice';
+import { searchFormActions } from '../../model/slices/searchFormSlice';
 import {
   SearchFormFilterType,
   SearchFormSchema,
@@ -56,21 +56,21 @@ export const BookSearchForm = memo((props: BookSearchFormProps) => {
 
   const onRequestTextChange = useCallback(
     (value: string) => {
-      dispatch(bookSearchFormActions.setQuery(value));
+      dispatch(searchFormActions.setQuery(value));
     },
     [dispatch]
   );
 
   const onChangeFilterSelect = useCallback(
     (value: string) => {
-      dispatch(bookSearchFormActions.setFilter(value as SearchFormFilterType));
+      dispatch(searchFormActions.setFilter(value as SearchFormFilterType));
     },
     [dispatch]
   );
 
   const onChangeSortSelect = useCallback(
     (value: string) => {
-      dispatch(bookSearchFormActions.setSort(value as SearchFormSortType));
+      dispatch(searchFormActions.setSort(value as SearchFormSortType));
     },
     [dispatch]
   );

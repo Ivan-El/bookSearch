@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { ThunkConfig } from 'app/providers/StoreProvider';
 import { getSearchFormData } from 'feauters/SearchForm';
-import { bookSearchFormActions } from 'feauters/SearchForm/model/slices/searchFormSlice';
+import { searchFormActions } from 'feauters/SearchForm/model/slices/searchFormSlice';
 import {
   getBookHasMore,
   getBookListIsLoading,
@@ -20,7 +20,7 @@ export const fetchBookListNextPage = createAsyncThunk<
   const startIndex = data.startIndex;
 
   if (hasMore && !isLoading) {
-    dispatch(bookSearchFormActions.setStartIndex(startIndex + 1));
+    dispatch(searchFormActions.setStartIndex(startIndex + 1));
     dispatch(fetchBookList({ ...data, startIndex: startIndex + 1 }));
   }
 });
