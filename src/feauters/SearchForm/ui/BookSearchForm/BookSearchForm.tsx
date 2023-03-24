@@ -75,6 +75,16 @@ export const BookSearchForm = memo((props: BookSearchFormProps) => {
     [dispatch]
   );
 
+  const onKeyDownHandler = useCallback(
+    (evt: React.KeyboardEvent<HTMLInputElement>) => {      
+      if (evt.key === 'Enter') {
+        evt.preventDefault();
+        onSendRequest(formData);
+      }
+    },
+    [formData, onSendRequest]
+  );
+
   const onSendRequestHandler = useCallback(() => {
     onSendRequest(formData);
   }, [formData, onSendRequest]);
@@ -87,6 +97,7 @@ export const BookSearchForm = memo((props: BookSearchFormProps) => {
           className={cls.input}
           value={text}
           onChange={onRequestTextChange}
+          onKeyDown={onKeyDownHandler}
         />
         <Button
           className={cls.searchBtn}
