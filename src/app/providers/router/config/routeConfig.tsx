@@ -11,7 +11,7 @@ export enum AppRoutes {
 
 export const RoutePath: Record<AppRoutes, string> = {
   [AppRoutes.BOOKS]: '/bookSearch',
-  [AppRoutes.BOOK_PAGE]: 'bookSearch/books/',
+  [AppRoutes.BOOK_PAGE]: '/bookSearch/books/',
   [AppRoutes.NOT_FOUND]: '*',
 };
 
